@@ -1,0 +1,145 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(/BACKIMG.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+}
+.container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container nav .logo {
+    width: 150px;
+    cursor: pointer;
+    margin-right: 40%;
+}
+.container nav ul li{
+    display: inline-block;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+.container nav ul li:last-child{
+    margin: right 0; 
+}
+.container nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.container nav ul li a:hover{
+    color: #e7434b;
+
+}
+.content{
+    position: absolute;
+    size-adjust: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.content .title h1{
+    color: rgba(82, 20, 20, 0.2);
+    background: url(FIRE.jpg);
+    -webkit-background-clip:text;
+    background-size: contain;
+    animation: FIRE 15s linear infinite;
+    display: flex;
+    padding: 40px;
+    width: 200%;
+    font-size: 60px;
+    padding-right: 20;
+    margin-right: 700px;
+}
+
+@keyframes FIRE{
+        0%{ background-position:left 0 top 25px;
+
+        }
+
+     50%{
+        background-position:left 130px top -35px;
+     }
+     100%{
+        background-position:left 250px top 0;
+     } 
+
+    }
+
+ .container .title img{
+        width: 80px;
+        transform:rotate(20deg)
+ }/*
+.container.text h4{
+    color: #c1c1c1;
+    font-size: 50px;
+    letter-spacing: 30px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}*/
+
+.container .text  .btn{
+    text-decoration: none;
+    color:#fff;
+    background-color: #ea1923;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 1000px;
+    position:absolute;
+    top: 340px;
+    right: 400px;
+    width: 200px;
+    height: 60px;
+    border:3px solid WHITE;
+
+}
+.container .text  .btn:hover{
+    background-color: #fff;
+    color: #ea1923;
+}
+.icons a{
+    text-decoration: none;
+    color: rgb(214, 116, 116);
+
+ }
+
+ .icons ion-icon{
+    margin-left: 7%;
+    color:white;
+    margin: right 40px;
+    font-size: 30px;
+    transition: .4s ease;
+    position: relative;
+    top: 180px;
+    right: 100px;
+
+ }
+
+ .icons ion-icon:hover{
+
+    color:rgb(197, 85, 44);
+
+ }
+ @media only screen and (max-width:800px){
+    .container{
+        width:400px;
+    }
+    .content{
+        flex-basis: 100%;
+    }
+}
+
+ 
+
