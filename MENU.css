@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=lexend:wght@400,700;&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
 margin: 0;
 padding:0;
 box-sizing: border-box;
 }
 body {
-    font-family: 'Lexend', sans-serif;
+    font-family:'roboto'sans-serif; /*use roboto as font-family*/
     font-size: 16px;    
     line-height: 24px;
 }
@@ -31,6 +32,7 @@ body {
     padding-bottom: 30px;
     position:relative;
 }
+
 .heading h4:after{
     position:absolute;
     content: "";
@@ -47,6 +49,20 @@ body {
     justify-content: space-between;
 
 }
+.menus h2{
+    font-size: 100px;
+    font-family:'roboto'; /*use roboto as font-family*/
+    font-weight: 700;
+    color:black;
+}
+p{
+    font-size: 20px;
+    font-family:'roboto' ; /*use roboto as font-family*/
+    font-weight: 500;
+    color: blue;
+}
+
+
 .single-menu{
     text-align: center;
     flex-basis: 32%;
@@ -74,15 +90,17 @@ body {
 }
  .menu-box h4{
     text-transform: capitalize;
-    font-size: 22px;
+    font-size: 30px;
+    font-family:'roboto',sans-serif;
     margin: 10px auto;
     padding:10px;
     border-top: 1px dashed #ddd;
     border-bottom: 1px dashed #ddd;
  }
  .menu-box h4 span{
-    color:tomato;
+    color:rgb(149, 43, 25);
     font-style: italic;
+    font-family:'roboto',sans-serif;
  }
 .menu-box:hover img{
 border-radius: 0;
